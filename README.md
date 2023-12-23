@@ -5,4 +5,5 @@ Utilizei **HTML** e **CSS** além de uma biblioteca de javascript, **Swiper**. C
 
 <br>
 
-![projetoLivros](https://github.com/carloscamposb/LivrariaProgramacao-Onilne/assets/108171029/5643b5df-cece-4af6-98b4-c7a73998b94a)
+
+![projetoLivros](https://github.com/carloscamposb/LivrariaProgramacao-Online/assets/108171029/79fe4005-414b-4a15-a5e9-bc8effc2fb5a)
