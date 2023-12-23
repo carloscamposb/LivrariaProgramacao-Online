@@ -1,0 +1,44 @@
+@import url(../style/header.css);
+@import url(../style/sessaoInicial.css); /* Area do banner */
+@import url(../style/sessaoCarrossel.css);
+@import url(../style/editoraSessao.css);
+@import url(../style/sessaoVisitados.css);
+@import url(../style/areaNovidade.css);
+@import url(../style/rodape.css);
+
+
+:root{
+    --color-fundo: #EBECEE;
+    --color-footer: #F9F9F9;
+    --color-titulos: #EB9B00;
+    --color-contraste: #b78014;
+    --color-branco: #FFFF;
+    --color-gradiente:  linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --color-azul:#002F52;
+    --color-black: black;
+    --color-titulo-footer: #858585;
+    --color-topicosLinkFooter: #474646;
+}
+
+/* Aplicando o reset via seletor */
+
+ *, *::before , *::after{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+} 
+
+
+body{
+    font-size: 16px;
+    font-weight: 400px;
+    box-sizing: border-box;
+    background-color: var(--color-fundo);
+}
+
+
+ 
+   
+

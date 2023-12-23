@@ -1,0 +1,218 @@
+:root{
+    --color-fundo: #EBECEE;
+    --color-titulos: #EB9B00;
+    --color-branco: #FFFF;
+    --color-gradiente:  linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+
+}
+.cabecalhoMenuHamburguer{
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../assets/menu.svg);
+    background-repeat: no-repeat;
+    display: inline-block ;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-branco);
+   padding: 1.125rem 1.5rem;
+   position: relative;
+}
+
+
+
+
+/* Ajustar os elementos de cada div */
+.contaner{      
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.logo{
+ margin:0 1rem 0 0;
+}
+
+
+/* Para esconder o menu hamburguer */
+.listaMenu{
+    display:none;
+    position: absolute;
+    top: 100%;
+    right: 30%;
+    width: 70vw;
+}
+
+/* Usado para fazer o menu hamburguer sem JS reaparecer ao clicar no botão de check */
+.contanerBox:checked ~ .listaMenu{
+    display: block;
+
+}
+
+.listaMenu{
+background-color: var(--color-branco);
+list-style: none;
+text-align: start;
+box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+z-index: 2;
+}
+
+.listaMenuTitulo{
+    color: var(--color-titulos);
+    padding: 1.5rem; 
+    font-weight: 700;
+}
+
+.listaMenuTopico{
+ padding: 1rem 1rem .8rem;
+ font-weight: 400;
+ color:var(--color-gradiente);
+}
+
+.listaMenuLink:hover{
+   background-color: #EB9B00;
+   padding: .625rem 1.25rem 0;
+   border-radius: .5rem;
+   color: #EBECEE;
+}
+
+.tituloLogo , .textoIconeHeader,
+.listaGrupoCabecalho{
+    display: none;
+}
+
+
+
+@media screen and (max-width:352px){
+    .contaner{     
+        gap: .1rem;
+    }
+    
+    .listaMenuTitulo{
+        padding: 1rem; 
+    }  
+          
+} 
+
+@media screen and (min-width:800px){
+    
+    .tituloLogo{
+        display: block; 
+        font-weight: 400;
+        font-size: 30px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+   
+    .cabecalhoMenuHamburguer{
+     display: none; 
+    }
+
+    .listaGrupoCabecalho{
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    .listaCabecalho, .listaCabecalhoLink, .listaOpcoesItens {
+        padding: 0 .5rem; 
+        color: var(--color-black); 
+        font-weight: 400;
+        font-size: 1rem;  
+    }
+
+    .listaOpcoesItens:hover{
+        background-color: var(--color-titulos);
+        padding: .2rem .5rem;
+        border-radius: 10px;
+    
+    }
+
+    .listaCabecalhoLink:hover{
+        background-color: var(--color-titulos);
+        padding: .2rem .5rem;
+        border-radius: 10px;
+    }
+
+    .cabecalho{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--color-branco);
+       padding: 1.125rem 1rem;
+       position: relative;
+    }
+
+    .favoritoIcon{
+        display: none;
+   }
+   
+
+   .listaMenu{
+    width: auto;
+    display:none;
+    position: absolute;
+    right: 50%;    
+   }
+
+   
+   .listaMenuTopico{
+    font-size: 14px;
+   }
+   
+   
+   .listaMenuLink:hover{
+    background-color: #EB9B00;
+    padding: .6rem .2rem 0;
+    border-radius: .5rem;
+    color: #EBECEE;
+ }
+ 
+   
+   .contanerBox{
+    display: none;
+   }
+   
+
+}
+
+
+
+@media screen and (min-width:1500px){
+    
+
+    
+    .listaGrupoCabecalho{
+        margin-right: auto;
+        padding-left: 30px;
+    }
+
+
+   .iconesLinkHeader, .textoIconeHeader{
+    display: flex;
+    align-items: center;
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 400;
+   }
+
+   .listaMenu{
+    width: auto;
+    display:none;
+    position: absolute;
+    right: 72%;    
+   }
+
+
+}
+
+
+
+
+
+
+
+
+

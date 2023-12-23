@@ -1,0 +1,100 @@
+.sessaoInicial{
+    text-align: center;
+    background: var(--color-gradiente);
+    color: var(--color-branco);
+    padding: 2.5rem 2rem;    
+}
+
+.tituloInicial{
+    font-size: 1.125rem;
+    font-weight: 700;
+    /* padding: 32px 0px 14px 0px; */
+   
+}
+
+.texto{
+   font-weight: 500;
+   margin: 1rem 0; 
+}
+
+.abaPesquisa{    
+    margin: 1.5rem 0rem ; 
+    border: 1px solid var(--color-branco);
+    border-radius: 1.5rem;
+    background-color: transparent;
+    padding: 10px 20px; 
+    width: 100%;
+    color: var(--color-branco);
+}
+
+
+
+.abaPesquisa::placeholder{
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    padding-left: 1.2rem;
+    color: var(--color-branco);
+    background-image: url(../assets/pesquisa.svg);
+    background-repeat: no-repeat;
+    background-position: .20rem ;
+}
+
+
+@media screen and (min-width:800px){
+   
+    .tituloInicial{
+        font-size: 30px;
+        
+    }
+
+    .texto{
+        font-size: 16px;
+     }
+
+
+    .abaPesquisa{    
+     width: 50%;
+    }
+
+
+    .abaPesquisa::placeholder{
+        font-size: 12px;
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+        padding-left: 1.2rem;
+        color: var(--color-branco);
+        background-image: url(../assets/pesquisa.svg);
+        background-repeat: no-repeat;
+        background-position:3rem;
+    }
+   
+}
+  
+
+@media screen and (min-width:1000px){
+    .abaPesquisa{    
+        width: 35%;
+       }
+}    
+
+
+@media screen and (min-width:1500px){
+    .abaPesquisa{    
+        width: 35%;
+       }
+
+       .abaPesquisa::placeholder{
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+        padding-left: 1.2rem;
+        color: var(--color-branco);
+        background-image: url(../assets/pesquisa.svg);
+        background-repeat: no-repeat;
+        background-position:7rem;
+    }
+}    
